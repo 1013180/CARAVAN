@@ -37,28 +37,27 @@
     <h2 class="blog-heading">Blog</h2>
     <section class="blog-box">
       <h3 class="blog-box-heading">
-        <%= @blog.title %>
         <!-- title部分 下で変更します -->
         Hopeful lessons from the battle to save rainforests
         <!-- title部分 ここまで -->
+        <%= @blog.title %>
       </h3>
       <div class="blog-box-content">
         <p class="category">
-          <%= @blog.category %>
           <!-- category部分 下で変更します -->
           Nature
           <!-- category部分 ここまで -->
+          <%= @blog.category %>
         </p>
         <p class="blog-date">
-          <%= @blog.created_at %>
           <!-- created_at部分 下で変更します -->
           June 19, 2017
           <!-- created_at部分 ここまで -->
+            <%= @blog.created_at %>
         </p>
       </div>
       <%= image_tag "img/forest.jpg", class:"single-image" %>
       <p class="single-text">
-        <%= @blog.body %>
         <!-- body部分 下で変更します -->
         The environment of rain forests is ideal for plants: An estimated<br>
         two-thirds of the world's plant species grow in the rain forest.<br>
@@ -84,6 +83,7 @@
         also visit orchids, and its seeds are spread by the agouti,<br>
         a small tree mammal.
         <!-- body部分 ここまで -->
+        <%= @blog.body %>
       </p>
       <a href="#">編集</a>
       <a href="#">削除</a>
